@@ -12,16 +12,26 @@ header {
     height: 10%;
 }
 
-/* Logomarca */
-header > div:nth-child(1){
-    background-color: black;
-    width: 20%;
+header > div, header > nav {
+    height: 50px;
     float: left;
 }
 
-header > div {
-    background-color: green;
+/* Logomarca */
+header > div:first-child{
+    margin-left: 5%;
+    background-color: black;
+    width: 15%;
+}
+
+header > nav {
+    background-color: pink;
     width: 30%;
-    height: 50px;
-    float: right;
+}
+
+/* Busca, login e carrinho */
+header > div:last-child {
+    margin-right: 5%;
+    background-color: green;
+    width: 45%;
 }
