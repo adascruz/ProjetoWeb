@@ -1,77 +1,75 @@
 /* Zerar padding e margin para todos os elementos */
-* {
-    padding: 0;
-    margin: 0;
-}
-
-/* Cor de fundo do body */
-.corpo{
-    background-color: #C0C0C0;
+*, body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Helvetica;
 }
 
 header {
     background-color: #483D8B;
-    color: white;
+    position: static;
+    margin-top: 1px;
     width: 100%;
-    min-height: 67px;
-    height: 10%;
+    height: 66px;
 }
 
 header > div {
-    height: 65px;
     float: left;
-    margin-left: 1.5px;
-    margin-top: 0.5px;
-    margin-bottom: 0.5px;
+    padding: 0px 1px;
+    margin: 0px 1px;
 }
 
 /* Logomarca */
 header > div:nth-child(1){
     margin-left: 5%;
-    background-color: #42426F;;
-    width: 14%;
-    text-align: center;
-   /* background-image: url("../logo.png"); */
+    width: 15%;
+    height: 100%;
+}
+
+header > div > figure > img {
+    margin: 0px;
+    padding: 3px;
+    width: 280px;
+    height: 60px;
 }
 
 header > div:nth-child(2) {
-    background-color: #42426F;
-    background-color: black;
-    width: 30%;
+    width: 23.85%;
 }
 
 /* Busca, login e carrinho */
 header > div:nth-child(3) {
-    margin-right: 5%;
-    background-color: #42426F;
-    width: 44%;
+    width: 50%;
 }
 
 header > div > nav {
     width: 100%;
     height: 100%;
-    text-align: center;
 }
 
 /* Configurando Itens Principais */
 header > div > nav > ul {
     list-style-type: none;
-    margin: 20px auto;
 }
 
 header > div > nav > ul > li {
-   display: table-cell;
-   background-color: #42426F;
-   width: 37%;
-   border-bottom: none;
+    display: table-cell;
+    margin: 0px 1px;
+    background-color: #42426F;
+}
+
+header > div > nav > ul > li {
+    border-bottom-right-radius: 10px;
 }
 
 header > div > nav > ul li a {
+    margin: 0px;
+    padding: 24px;
     color: white;
     text-decoration: none;
-    padding: 5px 10px;
+    text-align: center;
+    vertical-align: middle;
     display: block;
-    border-left: 1px;
     transition: 0.4s;
 }
 
@@ -86,14 +84,15 @@ header > div > nav > ul li ul {
 
 /* Formatando SubMenu */
 header > div > nav > ul li ul li {
-    width: 150px;
+    height: 100%;
+    width: 200px;
 }
 
 /* Interação com Menu */
 header > div > nav > ul li a:hover {
-    color: #D8D8BF;
+    color: black;
+    background-color: white;
     text-shadow: 0px 0px 10px #42426F;
-    box-shadow: 2px 2px 20px #ccc;
     transition: 0.4s;
 }
 
