@@ -1,11 +1,14 @@
+/* Zerar padding e margin para todos os elementos */
 * {
     padding: 0;
     margin: 0;
 }
-//COMENTAR O CÓDIGO DEPOIS
+
+/* Cor de fundo do body */
 .corpo{
     background-color: #C0C0C0;
 }
+
 header {
     background-color: #483D8B;
     color: white;
@@ -20,7 +23,6 @@ header > div {
     margin-left: 1.5px;
     margin-top: 0.5px;
     margin-bottom: 0.5px;
-    
 }
 
 /* Logomarca */
@@ -28,11 +30,13 @@ header > div:nth-child(1){
     margin-left: 5%;
     background-color: #42426F;;
     width: 14%;
-   // background-image: url("../logo.png"); 
+    text-align: center;
+   /* background-image: url("../logo.png"); */
 }
 
 header > div:nth-child(2) {
-    background-color: #42426F;;
+    background-color: #42426F;
+    background-color: black;
     width: 30%;
 }
 
@@ -46,53 +50,34 @@ header > div:nth-child(3) {
 header > div > nav {
     width: 100%;
     height: 100%;
-    padding: 0px auto;
-    margin: 10px auto;
     text-align: center;
-    list-style-type: none;
-   //position: relative;*/
-   //background-color: #42426F;
 }
 
 /* Configurando Itens Principais */
 header > div > nav > ul {
     list-style-type: none;
-    margin-top: 20px;
-    margin-left: 1.5px;
-  //  background-color: #483D8B;
+    margin: 20px auto;
 }
 
 header > div > nav > ul > li {
-   /*
-    border: 1px solid lightgrey;*/
    display: table-cell;
    background-color: #42426F;
+   width: 37%;
    border-bottom: none;
 }
 
-header > div > nav > ul > li:nth-child(2) , li:nth-child(3) {
-   border-left: 1px solid #483D8B;
-}
-
 header > div > nav > ul li a {
-    /*color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    display: block;
-    background-color: #42426F;*/
     color: white;
     text-decoration: none;
-    //font-size: larger;
     padding: 5px 10px;
     display: block;
-    border-left: 1px;//4px solid lightgrey;
-    //box-shadow: 2px 2px 10px #ccc;
+    border-left: 1px;
+    transition: 0.4s;
 }
 
 /* Configurando/Escondendo SubMenu */
 header > div > nav > ul li ul {
     list-style: none;
-    //border: 1px solid lightgrey;
     background-color: #42426F;;
     position: absolute;
     display: none;
@@ -101,18 +86,15 @@ header > div > nav > ul li ul {
 
 /* Formatando SubMenu */
 header > div > nav > ul li ul li {
-    //border: 1px solid lightgrey;
     width: 150px;
 }
 
-/* InteraÃ§Ã£o com Menu */
+/* Interação com Menu */
 header > div > nav > ul li a:hover {
- /*   background: grey;
-    color: cyan;
-    text-shadow: 0px 0px 10px cyan;*/
     color: #D8D8BF;
     text-shadow: 0px 0px 10px #42426F;
     box-shadow: 2px 2px 20px #ccc;
+    transition: 0.4s;
 }
 
 /* Exibindo SubMenu */
@@ -120,33 +102,21 @@ header > div > nav > ul li:hover ul {
     display: block;
 }
 
-/*label{
-    position: absolute;
-    margin-top: 2px;
-    display: inline;
-    left: 700px;  
-    background-color: #A8A8A8;
-    height: 45px;
-    width: 520px;
-
-}*/
 input{
     margin-top: 7px;
     height: 50px;
     width: 450px;
     font-size: 15px;
-    //background: #A8A8A8;
-
 }
+
 button{
     margin-top: 7px;
     height: 40px;
-    background :url("../imagens/ic_menu_search.png");// 2px -203px no-repeat transparent;
+    background :url("../imagens/ic_menu_search.png");
     border: none;
     color: transparent;
-    
-    //width: 450px;   
 }
+
 figure >img{
     margin-top: 13px;
     height: 100%;
