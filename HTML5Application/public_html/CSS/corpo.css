@@ -1,29 +1,76 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: Helvetica;
+}
+
+h3{
+    color: #42426F;
+}
+footer{
+    background-color: #42426F;;
+    color: white;
+    width: 100%;
+    min-height: 150px;
+    height: 30%;
+    font-size: 12px;
+    text-align: center;
+}
+footer>div:nth-child(1){
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+footer>div>a, a:link{
+    color:white;
+    text-decoration: none;
+
+}
+footer>div> a:hover{
+    color: #D8D8BF;
+}
+iframe{
+    margin: 10px auto;
+    min-width: 800px;
+    width: 900px;
+    max-width: 1280px;
+    min-heigth: 500px;
+    height: 700px;
+    max-heigth: 1500px;
 }
 section{
+    
     margin: 10px auto;
     min-width: 700px;
     max-width: 1200px;
     min-height:  500px;
     max-height: 800px;
-    background-color: #003399;
+    //background-color: #003399;
 }
-section> div{
-   // float: left;
-   // padding-right: 1px ;
+body>div>section{
+    margin: 20px auto;
+}
+body>div>section:nth-child(1){
+    background-color: #C0C0C0;
+}
+body>div>section:nth-child(2){
+    background-image: url("../imagens/Mass Effect.jpg")
+}
+body>div>section:nth-child(3){
+    background-color: #A8A8A8;
+}
+body>div>section:nth-child(1) > div{
     margin: 2px auto;
-    //padding:  2px auto;
     min-width: 700px;
     max-width: 1150px;
     min-height:  500px;
     max-height: 800px;
     background-color: wheat;
 }
+body>div>section:nth-child(2) > div{
+    background-color: #C0C0C0;
+}
 section> div> div{
-    float: left;
-    
+    float: left;   
 }
 section> div>div:nth-child(1){
     margin: 1px  ;
@@ -37,7 +84,7 @@ section> div>div:nth-child(2){
     margin: 1px auto;
     min-width: 547px;
     max-width: 900px;
-    min-height:250px;
+    min-height:248px;
     max-height:250px;
     background-color: background;
 }
@@ -45,55 +92,163 @@ section> div>div:nth-child(3){
     margin: 1px auto ;
     min-width: 547px;
     max-width: 900px;
-    min-height:250px;
+    min-height:248px;
     max-height:250px;
     background-color: background;
 }
 
 
-li{
-    list-style: none;
-}
-section>ul>li>section{
-    min-width: 200px;
-    max-width: 200px;
-    min-height:200px;
-    max-height:200px;
-    border: 6px graytext;
-    padding-bottom: 30px; 
-    float:left;
-    margin-right: auto;
-    text-align: center;
-    margin-left: 15px;
-}
-.article_imagem{
-    background-color: darkgrey;
-    color: white;
-    border-bottom: 3px;
-    height:  200px;
-    margin:  1px;
-}
-.article_preco{
-    background-color: lightslategrey;
-    color: white;
-    border-bottom: 3px;
-    height:  150px;
-    margin:  1px;   
-}
 img{
     width: 150px;
     height: 200px
 }
+
+li{
+    list-style: none;
+}
+/*
+.lista_customizada{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.lista_customizada li {
+  counter-increment: numeroLista;
+  //margin-bottom: 1px;
+}
+.lista_customizada li::before {
+  list-style-position: inside;
+  content: counter(numeroLista);
+  margin-right: 5px;
+  font-size: 80%;
+  background-color: #8C1717;
+  color: white;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 10px;
+}*/
+.maisBuscados>ul>li>section{
+    display: inline-block;
+}
+.maisBuscados>ul>li>section> article{
+    float: left;
+}
+.maisBuscados>ul>li>section> article:nth-child(1){
+    margin: 1px  ;
+    min-width: 100px;
+    max-width: 200px;
+    min-height:  100px;
+    max-height: 200px;
+}
+.maisBuscados>ul>li>section> article:nth-child(2){
+    margin: 17px  ;
+    min-width: 100px;
+    max-width: 200px;
+    min-height: 100px;
+    max-height: 200px;
+}
+.maisBuscados>ul>li>section{
+    float: left;
+    min-width: 350px;
+    max-width: 350px;
+    min-height:95px;
+    max-height:95px;
+    margin-left: 40px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: white;
+}
+//}
+/*.maisBuscados>ul>li>section>article{
+
+    float: left;
+    height: 100%;
+    width: 30%;
+    border: 2px outset black;
+   // background-color: pink;
+    //margin-right: 10px;
+    //margin-left: 15px;
+    text-align: center;
+    //margin-left: 10px ;
+}
+.maisBuscados>ul>li>section>article:nth-child(2){
+    position: relative;
+    width: 20%;
+    //border: 100px outset black;
+    background-color: plum;
+}
+.maisBuscados>ul>li:first-child{
+    margin-left: 10px;
+}
+*/
+.maisBuscados>ul>li>section>article>figure>img{
+  border-radius: 10px 10px 0px 0px;
+  width: 30%;
+}
+
+.emDestaque>ol>li>section{
+    float: left;
+    min-width: 170px;
+    max-width: 170px;
+    min-height:200px;
+    max-height:400px;
+    margin-left: 50px;
+
+}
+
+.emDestaque>ol>li>section>article{
+    float: left;
+    height: 100%;
+    width: 100%;
+    border: 2px outset black;
+   // background-color: pink;
+    margin-right: 10px;
+    margin-left: 15px;
+    text-align: center;
+    margin-left: 10px ;
+}
+.emDestaque>ol>li>section{
+    height: 250px;
+}
+.emDestaque>ol>li>section>article:nth-child(1){
+  border-radius: 10px 10px 0px 0px;
+
+}
+.emDestaque>ol>li>section>article:nth-child(2){
+    height: 50%;
+}
+.emDestaque>ol>li:first-child{
+    margin-left: 10px;
+}
+
+.emDestaque>ol>li>section>article>figure>img{
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  height: 300%;
+}
+
+
 /*
 
-
-section>ul>li>section{
-    width: 31%;
-    height:30%;
-    border: 6px graytext;
-    padding-bottom: 30px; 
-    float:left;
-    margin-right: auto;
+.jogosDestaque div>div:nth-child(1) figure>img{
+    margin: 1px  ;
+    min-width: 598px;
+    max-width: 798px;
+    min-height:  498px;
+    max-height:798px;    
+}
+.jogosDestaque div>div:nth-child(2) figure>img{
+    margin: 1px  ;
+    min-width: 547px;
+    max-width: 900px;
+    min-height:248px;
+    max-height:250px;    
+}
+.jogosDestaque div>div:nth-child(3) figure>img{
+    margin: 1px  ;
+    min-width: 547px;
+    max-width: 900px;
+    min-height:248px;
+    max-height:250px;  
 }
 
 */
