@@ -93,7 +93,7 @@ body>div>section{
     max-width: 1200px;
     min-height: 300px;
     max-height: 500px;
-    background-color: black;
+    //background-color: black;
     margin-left: 73px;
 }
 body>div>section:first-child{
@@ -134,7 +134,7 @@ div>section>article>p{
 }
 hr{
    margin-left: 10px;
-   margin-right: 10px;
+   margin-right: 400px;
    color: white;
    size: 2px;
    
