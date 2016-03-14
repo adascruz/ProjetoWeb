@@ -2,70 +2,117 @@
 *, body {
     padding: 0px;
     margin: 0px;
-    font-family: Helvetica;
+    font-family: "Tahoma";
 }
 
 header {
     background-color: #483D8B;
-    position: static;
+    text-align: center;
+    position: relative;
     margin-top: 1px;
     width: 100%;
     height: 66px;
 }
 
 header > div {
+    min-width: 1200px;
+    width: 82.5%;
+    max-width: 1728px;
+    height: 100%;
+    padding: 0px;
+    margin: 0px auto;
+}
+
+header > div > div {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px auto;
+}
+
+header > div > div > div {
     float: left;
+    border-left: 1px solid black;
     padding: 0px 1px;
-    margin: 0px 1px;
+    margin: 0px auto;
 }
 
 /* Logomarca */
-header > div:nth-child(1){
-    margin-left: 5%;
+header > div > div > div:nth-child(1){
+    background-color: #42426F;
+    min-width: 250px;
     width: 15%;
+    max-width: 280px;
+    height: 100%;
+    border-bottom-left-radius: 10px;
+}
+
+div.logo > a {
+    float: left;
+    background-color: #42426F;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
     height: 100%;
 }
 
-header > div > figure > img {
+div.logo > a > div > figure > img {
     margin: 0px;
-    padding: 3px;
-    width: 280px;
-    height: 60px;
+    padding: 6px 3px;
+    width: 240px;
+    height: 55px;
 }
 
-header > div:nth-child(2) {
-    width: 23.85%;
+header > div > div > div:nth-child(2) {
+    min-width: 419px;
+    width: 0%;
+    max-width: 480px;
 }
 
 /* Busca, login e carrinho */
-header > div:nth-child(3) {
-    width: 50%;
+header > div > div > div:nth-child(3) {
+    background-color: #42426F;
+    text-align: left;
+    min-width: 500px;
+    width: 40%;
+    max-width: 440px;
+    height: 100%;
+    border-bottom-right-radius: 10px;
+    border-right: 1px solid black;
 }
 
-header > div > nav {
+header > div > div > div > nav {
     width: 100%;
     height: 100%;
 }
 
 /* Configurando Itens Principais */
-header > div > nav > ul {
+header > div > div > div > nav > ul {
     list-style-type: none;
 }
 
-header > div > nav > ul > li {
+header > div > div > div > nav > ul > li {
+    background-color: #00ff00;
     display: table-cell;
     margin: 0px 1px;
+    transition: 0.4s;
+}
+
+header > div > div > div > nav > ul > li:not(:first-child) {
+    border-left: 1px solid black;
+}
+
+header > div > div > div > nav > ul > li:hover {
+    background-color: #ccffcc;
+    transition: 0.4s;
+}
+
+header > div > div > div > nav ul li a {
     background-color: #42426F;
-}
-
-header > div > nav > ul > li {
-    border-bottom-right-radius: 10px;
-}
-
-header > div > nav > ul li a {
-    margin: 0px;
-    padding: 24px;
     color: white;
+    margin: 0px;
+    padding: 23px 30px;
     text-decoration: none;
     text-align: center;
     vertical-align: middle;
@@ -73,50 +120,112 @@ header > div > nav > ul li a {
     transition: 0.4s;
 }
 
+header > div > div > div > nav > ul > li > a {
+    background-color: #42426F;
+    color: white;
+}
+
+header > div > div > div > nav > ul > li:not(:first-child) > a {
+    border-bottom-right-radius: 20px;
+}
+
+header > div > div > div > nav ul li a:hover {
+    background-color: white;
+    color: black;
+    text-shadow: 0px 0px 10px #42426F;
+    transition: 0.4s;
+}
+
 /* Configurando/Escondendo SubMenu */
-header > div > nav > ul li ul {
+header > div > div > div > nav > ul li ul {
     list-style: none;
-    background-color: #42426F;;
     position: absolute;
     display: none;
     border-left: 2px solid lightgrey;
 }
 
 /* Formatando SubMenu */
-header > div > nav > ul li ul li {
+header > div > div > div > nav > ul li ul li {
     height: 100%;
     width: 200px;
 }
 
-/* Interação com Menu */
-header > div > nav > ul li a:hover {
-    color: black;
-    background-color: white;
-    text-shadow: 0px 0px 10px #42426F;
-    transition: 0.4s;
-}
-
 /* Exibindo SubMenu */
-header > div > nav > ul li:hover ul {
+header > div > div > div > nav > ul li:hover ul {
     display: block;
 }
 
-input{
-    margin-top: 7px;
-    height: 50px;
-    width: 450px;
-    font-size: 15px;
+div.pesquisa > form {
+    float: left;
+    padding: 0px;
 }
 
-button{
+div.pesquisa > form > input{
+    margin-top: 7px;
+    height: 50px;
+    width: 250px;
+    font-size: 16px;
+}
+
+div.pesquisa > form > button{
     margin-top: 7px;
     height: 40px;
-    background :url("../imagens/ic_menu_search.png");
-    border: none;
+    width: 40px;
+    background-color: transparent;
+    background-image: url("../imagens/ic_menu_search.png");
+    border: 2px;
+    border-style: ridge;
+    border-color: #330099;
+    border-radius: 10px;
     color: transparent;
 }
 
-figure >img{
+div.pesquisa > div {
+    float: left;
+    margin-left: 10px;
+    border-radius: 5px;
+    text-align: center;
+    height: 100%;
+}
+
+div.pesquisa > div:last-child {
+    margin-left: 1px;
+}
+
+a.logar {
+    background-color: #42426F;
+    color: white;
+    padding: 22px 30px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    transition: 0.5s;
+}
+
+a.cesta{
+    background-color: #42426F;
+    padding: 3px 22px;
+    display: block;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    transition: 0.5s;
+}
+
+a.cesta img {
+    height: 40px;
+}
+
+div.pesquisa > div > a:hover {
+    border-bottom: 4px solid #C5E0DC;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 1px 1px 50px #C5E0DC;
+    transition: 0.5s;
+}
+    
+figure > img{
     margin-top: 13px;
     height: 100%;
 }

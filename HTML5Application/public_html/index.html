@@ -7,35 +7,57 @@
         <link rel="stylesheet" href="CSS/corpo.css">
     </head>
     <body>
-        <header>
+         <header>
             <div>
-                <figure>
-                    <img  src="imagens/logo.png" alt="logo">
-                </figure>
-            </div>
-            <div>
-                <nav>
-                    <ul>
-                       <li> <a href="#">Home</a><!-- Home --></li>
-                        <li> <a href="#">Plataformas</a><!-- Plataformas -->
+                <div>
+                    <div class="logo">
+                        <a href="#">
+                            <div>
+                                <figure>
+                                    <img src="imagens/logo.png" alt="logo">
+                                </figure>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <nav>
                             <ul>
-                                <li> <a href="#">Mídias Digitais</a> </li>
-                                <li> <a href="#">Consoles</a> </li>
+                               <li> <a href="#">Home</a><!-- Home --></li>
+                                <li> <a href="#">Plataformas</a><!-- Plataformas -->
+                                    <ul>
+                                        <li> <a href="#">Mídias Digitais</a> </li>
+                                        <li> <a href="#">Consoles</a> </li>
+                                    </ul>
+                                </li>
+                                <li> <a href="#">Quem Somos?</a> <!-- Quem somos! -->
+                                    <ul>
+                                        <li> <a href="#">Empresa</a> </li>
+                                        <li> <a href="#">Contatos</a> </li>
+                                        <li> <a href="#">Fale Conosco</a> </li>
+                                    </ul>
+                                </li>
                             </ul>
-                        </li>
-                        <li> <a href="#">Quem Somos?</a> <!-- Quem somos! -->
-                            <ul>
-                                <li> <a href="#">Empresa</a> </li>
-                                <li> <a href="#">Contatos</a> </li>
-                                <li> <a href="#">Fale Conosco</a> </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div>
-                <input type="search" name="campo_busca" placeholder="Digite aqui o jogo que procura!" > 
-                <button type="submit"> Buscar</button>
+                        </nav>
+                    </div>
+                    <div class="pesquisa">
+                        <form action="pesquisa.html" method="GET">
+                            <input type="search" name="campo_busca" placeholder="Digite aqui o jogo que procura!" > 
+                            <button type="submit">Buscar</button>
+                        </form>
+                        <div>
+                            <a class="logar" href="#">
+                                Entrar
+                            </a>
+                        </div>
+                        <div>
+                            <a class="cesta" href="#">
+                                <figure>
+                                    <img src="imagens/cesta.jpg" alt="carrinho">
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
         <iframe name="principal" src="paginas/pgInicial.html" scrolling="no" ></iframe> <!-- 
