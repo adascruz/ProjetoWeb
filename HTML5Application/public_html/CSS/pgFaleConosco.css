@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Candara;
+    font-size: 20;
+    background-color: #A8A8A8;
+    
+}
+
+#btnCadastrar{
+    margin-left: 300px;
+    color: #666666;
+}
+label{
+  color: #666666;
+}
+section{
+    min-width: 300px;
+    max-width: 500px;
+    width: 60%;
+    
+    min-height: 500px;
+    max-height: 700px;
+    height:  80%;
+    
+    margin-left: 400px;
+}
+input, textArea, selector, option{
+    background-color: white;
+    border-radius: 3px 3px 3px 3px;
+    border: none;
+}
+

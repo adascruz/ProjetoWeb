@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Index</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../CSS/pgFaleConosco.css">
+    </head>
+    <body>
+        <section>
+            <label>
+                É nosso cliente? <br>
+                <select>
+                    <option value> Selecione </option>
+                    <option value="S"> Sim </option>
+                    <option value="N"> Não </option>
+                </select>
+            </label> <br>
+            <label>
+                Nome <br>
+                <input> 
+                </input>
+            </label> <br>
+
+            <label> 
+                Email <br>
+                <input type="email"> 
+                </input>
+            </label><br>
+            <label> 
+                Cpf <br>
+                <input name="txtCpf" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}.[0-9]{2}" placeholder="000.000.000.00">
+                </input>
+                </input>
+            </label><br>
+            <label>
+                Telefone <br>
+                <input name="txtFone" pattern="[0-9]{5}-[0-9]{4}" placeholder="00000-0000">
+                </input>
+                </input>  
+            </label> <br>
+
+            <label>
+                Mensagem <br>
+                <textarea name="txtMensagem"  rows="5" cols="60" placeholder="Escreva aqui sua mensagem!">
+                </textarea> 
+            </label> <br>
+            
+            <input id="btnCadastrar" type="submit" value="Enviar">
+            </input>
+           
+        </section>
+
+    </body>
+</html>
