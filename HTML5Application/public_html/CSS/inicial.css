@@ -4,89 +4,309 @@
     padding: 0px;
 }
 
+a {
+    text-decoration: none;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 22px;
+    text-align: left;
+}
+
+sub {
+    vertical-align: middle;
+    font-size: 15px;
+}
+
 #corpo {
-    //position: absolute;
-    background-color: transparent;
+    margin-top: 50px;
+    background-color: #C0C0C0;
     width: 100%;
     height: 1600px;
 }
 
 #secao1 {
-    position: absolute;
-    background-color: #C0C0C0;
-    width: 100%;
-    height: 500px;
+    height: 400px;
+    margin: 0px 10%;
 }
 
 #secao1 > div {
-    position: absolute;
     width: 100%;
     height: 100%;
 }
 
-#secao1 > div > a {
-    position: absolute;
+#secao1 > div > div {
+    float: left;
+    width: 10%;
+    height: 100%;
+}
+
+#secao1 > div > div > a {
     text-decoration: none;
-    font-family: "Tahoma";
+    text-align: left;
+    font-family: "Arial";
     background-color: transparent;
     color: #666666;
-    font-size: 150px;
-    padding: 2px 10px;
-    margin: 156.75px auto;
-    opacity: 100%;
+    font-size: 100px;
     transition: 0.5s;
 }
 
-#secao1 > div > a:hover {
+#secao1 #esquerda > a, #secao1 #direita > a {
+    position: relative;
+    top: 145px;
+}
+
+#secao1 > div > div > a:hover {
     color: white;
     transition: 0.5s;
 }
 
-#paineis {
-    position: relative;
+#secao1 #direita {
+    text-align: right;
+}
+
+#secao1 #paineis {
     background-color: white;
-    min-width: 800px;
     width: 80%;
-    max-width: 1536px;
-    height: 450px;
-    margin: 25px auto;
 }
 
-#paineis > div {
+#secao1 #paineis > div {
     float: left;
-    min-width: 318px; /* 320 - 2*/
-    width: 39.8%;
-    max-width: 612.4px; /* 614.4 */
-    height: 223px;
+    min-width: 151.6px; /* 153.6 */
+    width: 39.75%;
+    max-width: 489.52px; /* 491.52 */
+    height: 198px;
     margin: 1px;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
-#paineis #divDestaque {
-    min-width: 478px;
-    width: 59.8%;
-    max-width: 919.6px; /*921.6*/
-    height: 448px;
+#paineis > div#divDestaque {
+    min-width: 228.4px; /* 230.4 */
+    width: 59.75%;
+    max-width: 735.28px; /* 737.28 */
+    height: 398px;
 }
 
-#paineis > div > a > div {
+#paineis a > div {
+    background-color: black;
     width: 100%;
     height: 100%;
     opacity: 1;
     transition: 0.5s;
 }
 
-#paineis > div > a > div:hover {
+#paineis figure, #paineis img {
+    width: 100%;
+    height: 100%;
+}
+
+#paineis a > div:hover {
     opacity: 0.3;
     transition: 0.5s;
 }
 
-#paineis > div > a > div{
-    background-color: black;
+#secao2 {
+    background-image: url("../imagens/Mass Effect.jpg");
+    background-size: cover;
+    margin: 50px 0px 0px;
+    padding: 0px;
+    height: 360px;
 }
 
-#secao1 > div > a:last-child {
+#secao2 > div {
+    width: 100%;
+    height: 100%;
+}
+
+#secao2 .titulo {
+    background-image: linear-gradient(to bottom, transparent -50%, white 25%, silver 100%);
+    font-family: "Tahoma";
+    font-size: 20px;
+    color: #000000;
+    padding: 10px 12%;
+}
+
+#painelDestaques {
+    background-image: linear-gradient(to bottom, silver 0%, transparent 10%, transparent 75%, silver 100%);
+    padding: 0px;
+    margin: 0px;
+    padding: 0px 10%;
+    height: 314px;
+}
+
+#painelDestaques > div {
+    float: left;
+    height: 280px;
+    width: 15%;
+    margin: 20px 2.325%;
+}
+
+#painelDestaques .linkEmDestaque > div{
+    width: 100%;
+    height: 100%;
+}
+
+a.linkEmDestaque {
+    color: #ff9966;
+    text-decoration: none;
+}
+
+div.imagemEmDestaque {
+    width: 100%;
+    height: 60%;
+}
+
+div.imagemEmDestaque > figure {
+    width: 100%;
+    height: 100%;
+}
+
+div.imagemEmDestaque img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+div.comprar {
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(255,255,255,0.75) 7.5%, rgba(255,255,255,0.95) 25%, rgba(255,255,255,1) 70%, transparent 75%);
     position: relative;
-    top: -500px;
-    float: right;
+    width: 100%;
+    height: 60%;
+    margin-top: -10px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 0.5s;
+}
+
+div.comprar > div:first-child {
+    font-family: "Garamond";
+    font-stretch: ultra-condensed;
+    padding: 20px 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+div.comprar > div:last-child {
+    color: #d0e4ff;
+    font-size: 26px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    text-align: center;
+    opacity: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+a.linkEmDestaque:hover div.comprar{
+    margin-top: -50px;
+    transition: 0.5s;
+}
+
+a.linkEmDestaque:hover div.comprar > div:last-child{
+    background-image: linear-gradient(to bottom, transparent 5% ,rgba(255,255,255, 0.5) 15%, rgba(238,38,34, 0.9) 20%);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+a.linkEmDestaque h4 {
+    color: #8a7f23;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+#secao3 {
+    background-color: white;
+    margin: 50px 10%;
+    height: 650px;
+}
+
+#secao3 .titulo {
+    background-image: linear-gradient(to bottom, silver -10%, white 75%);
+    padding: 4px 0px;
+    padding-left: 2.5%;
+    font-family: "Tahoma";
+    font-size: 20px;
+    color: #3333ff;
+}
+
+#secao3 #maisVendidos {
+    width: 100%;
+    height: 618px;
+}
+
+#maisVendidos > div {
+    float: left;
+    width: 33.3%;
+    height: 206px;
+}
+
+#maisVendidos > div > div {
+    margin: 10%;
+    height: 60%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#maisVendidos div.vendido {
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.35s;
+    width: 100%;
+    height: 100%;
+}
+
+#maisVendidos div.vendido:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+#maisVendidos .vendido > div {
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+
+#maisVendidos .vendido > div:last-child {
+    width: 60%;
+}
+
+#maisVendidos h3 {
+    color: black;
+    margin-top: 5%;
+    font-family: "Garamond";
+    font-size: 20px;
+    font-stretch: ultra-condensed;
+}
+
+#maisVendidos h4 {
+    color: red;
+    margin-top: 20%;
+    margin-left: 7.5%;
+    font-family: "Garamond";
+    font-size: 18px;
+    font-stretch: ultra-condensed;
+}
+
+.vendido figure, .vendido img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.vendido figure {
+    margin: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.vendido img {
+    width: 100%;
+    height: 100%;
 }

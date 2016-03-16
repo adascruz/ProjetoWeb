@@ -5,50 +5,111 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="../CSS/pgFaleConosco.css">
     </head>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery_mask.js"></script>
+    <script src="../js/funcoes.js"></script>
     <body>
-        <section>
-            <label>
-                É nosso cliente? <br>
-                <select>
-                    <option value> Selecione </option>
-                    <option value="S"> Sim </option>
-                    <option value="N"> Não </option>
-                </select>
-            </label> <br>
-            <label>
-                Nome <br>
-                <input> 
-                </input>
-            </label> <br>
+        <div id="corpoContato">
+            <section>
+                <article>
+                    <h3>Nossa Localização</h3>
+                </article>
+                <article>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63743.23336812197!2d-60.01442801866134!3d-3.1073775142605524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c05776ab394a3%3A0x42dbca416e1ebbcb!2sInstituto+Federal+de+Educa%C3%A7%C3%A3o%2C+Ci%C3%AAncia+e+Tecnologia+do+Amazonas!5e0!3m2!1spt-BR!2sbr!4v1458087459612" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>                
+                </article>
+                
+            </section>
+            <aside class="asideContato">
+                <article>
+                    <h1>Informações Gerais</h1>
+                    <p>Localizado próximo à Cadeia Pública Raimundo Vidal Pessoa.</p>
+                </article>
+                <article>
+                    <h1>Endereço</h1>
+                    <p>Av. Sete de Setembro, 1975 - Centro, Manaus - AM, 69020-120.</p>
+                </article>
+                <article>
+                    <h1>Telefone</h1>
+                    <table>
 
-            <label> 
-                Email <br>
-                <input type="email"> 
-                </input>
-            </label><br>
-            <label> 
-                Cpf <br>
-                <input name="txtCpf" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}.[0-9]{2}" placeholder="000.000.000.00">
-                </input>
-                </input>
-            </label><br>
-            <label>
-                Telefone <br>
-                <input name="txtFone" pattern="[0-9]{5}-[0-9]{4}" placeholder="00000-0000">
-                </input>
-                </input>  
-            </label> <br>
+                        <tr>
+                            <td><img src="../imagens/iconesContato/stat_sys_headset.png" alt="fone"></td>
 
-            <label>
-                Mensagem <br>
-                <textarea name="txtMensagem"  rows="5" cols="60" placeholder="Escreva aqui sua mensagem!">
-                </textarea> 
-            </label> <br>
-            
-            <input id="btnCadastrar" type="submit" value="Enviar">
-            </input>
-           
-        </section>
+                            <td>+55 (92)99123-4509</td>
+                            <td>Celular</td> 
+                        </tr>
+                        <tr>                            
+                            <td><img src="../imagens/iconesContato/perm_group_phone_calls.png" alt="fone"></td>
 
+                            <td>+55 (92) 3333-8986</td>
+                            <td>Empresa</td> 
+                        </tr>
+                        <tr>
+                            <td><img src="../imagens/iconesContato/sym_action_email.png" alt="fone"></td>
+
+                            <td>suporte@easystore.com</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../imagens/iconesContato/sym_action_email.png" alt="fone"></td>
+
+                            <td> comercial@easystore.com </td> 
+                        </tr>
+                    </table>
+                </article>
+                <article>
+                    <h1>Horário de Atendimento</h1>
+                    <p>Segunda à Sexta 08h às 18h <br></p>
+                </article>
+            </aside>
+            <form method="post" action="../index.html" onsubmit="validarMensagem()" name="form">
+                <div id="divFormulario">
+                    <h3>Fale conosco!</h3>
+
+                    <section>
+                        <h2>Seus dados: </h2>
+                        <label>
+                            <!-- É nosso cliente? <br> -->
+                            <select id="txtCliente">
+                                <option value> É nosso cliente?</option>
+                                <option value="S"> Sim</option>
+                                <option value="N"> Não</option>
+                            </select>
+                        </label> <br>
+                        <label>
+                            <!--Nome <br> -->
+                            <input name="txtNome" type="text" placeholder="Nome" required/>
+                        </label> <br>
+
+                        <label> 
+                            <!-- Email <br> -->
+                            <input id="txtEmail" type="email" placeholder="Email" required/> 
+                        </label><br>
+                        <label> 
+                            <!-- Cpf <br> -->
+                            <input id="txtCpf" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}.[0-9]{2}" placeholder="CPF" />
+
+                        </label><br>
+                        <label>
+                            <!-- Telefone <br>-->
+                            <input id="txtFone" pattern="[0-9]{5}-[0-9]{4}" placeholder="Telefone" />
+                        </label> <br> 
+                    </section>
+
+                    <section>
+                        <h2>Sua mensagem:</h2>
+                        <label>
+                            <!-- Mensagem <br> -->
+                            <textarea name="txtMensagem" rows="5" cols="44" placeholder="Escreva aqui sua mensagem!" required>
+                            </textarea> 
+                        </label> <br><br>
+                        <input id="btnCadastrar" type="submit" value="Enviar">
+                        </input>
+                    </section>
+                </div>
+            </form>   
+        </div>
     </body>
+
+    <script type="text/javascript">redimensionaIframe("princ");</script>
+
 </html>
