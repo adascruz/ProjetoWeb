@@ -1,0 +1,251 @@
+h3 {
+    color: #42426F;
+}
+
+iframe{
+    //min-width: 1500px;
+    width: 100%;
+   // border: 3px solid #00ff00;
+    //max-width: 2000px;
+    //overflow-y:hidden;
+}
+
+/* Cor de fundo do body */
+body > div {
+    background-color: #C0C0C0;
+}
+
+section {
+    margin: 10px auto;
+    min-width: 700px;
+    max-width: 1200px;
+    min-height:  500px;
+    max-height: 800px;
+    /* background-color: #003399; */
+}
+
+div > section {
+    margin: 20px auto;
+}
+
+div > section:nth-child(1) {
+    background-color: #C0C0C0;
+}
+
+div > section:nth-child(2) {
+    background-image: url("../imagens/Mass Effect.jpg")
+}
+
+div > section:nth-child(3) {
+    background-color: #A8A8A8;
+}
+
+div > section:nth-child(1) > div {
+    margin: 2px auto;
+    min-width: 700px;
+    max-width: 1150px;
+    min-height:  500px;
+    max-height: 800px;
+    background-color: wheat;
+}
+
+div > section:nth-child(2) > div {
+    background-color: #C0C0C0;
+}
+
+section > div > div {
+    float: left;   
+}
+
+section > div > div:nth-child(1) {
+    margin: 1px  ;
+    min-width: 600px;
+    max-width: 800px;
+    min-height:  500px;
+    max-height:800px;
+    background-color: background;
+}
+
+section > div > div:nth-child(2) {
+    margin: 1px auto;
+    min-width: 547px;
+    max-width: 900px;
+    min-height:248px;
+    max-height:250px;
+    background-color: background;
+}
+
+section > div > div:nth-child(3) {
+    margin: 1px auto ;
+    min-width: 547px;
+    max-width: 900px;
+    min-height:248px;
+    max-height:250px;
+    background-color: background;
+}
+
+li {
+    list-style: none;
+}
+
+.maisBuscados > ul > li > section {
+    display: inline-block;
+}
+
+.maisBuscados > ul > li > section > article {
+    float: left;
+}
+
+.maisBuscados > ul > li > section > article:nth-child(1) {
+    margin: 1px  ;
+    min-width: 100px;
+    max-width: 200px;
+    min-height:  100px;
+    max-height: 200px;
+}
+
+.maisBuscados > ul > li > section > article:nth-child(2) {
+    margin: 17px  ;
+    min-width: 100px;
+    max-width: 200px;
+    min-height: 100px;
+    max-height: 200px;
+}
+
+.maisBuscados > ul > li > section {
+    float: left;
+    min-width: 350px;
+    max-width: 350px;
+    min-height:95px;
+    max-height:95px;
+    margin-left: 40px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: white;
+}
+
+.maisBuscados > ul > li > section > article > figure > img {
+  border-radius: 10px 10px 0px 0px;
+  width: 30%;
+}
+
+.emDestaque > ol > li > section {
+    float: left;
+    min-width: 170px;
+    max-width: 170px;
+    min-height: 200px;
+    max-height: 400px;
+    margin-left: 50px;
+}
+
+.emDestaque > ol > li > section > article {
+    float: left;
+    height: 100%;
+    width: 100%;
+    border: 2px outset black;
+    /* background-color: pink; */
+    margin-right: 10px;
+    margin-left: 15px;
+    text-align: center;
+    margin-left: 10px ;
+}
+
+.emDestaque > ol > li > section {
+    height: 250px;
+}
+
+.emDestaque > ol > li > section > article:nth-child(1) {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.emDestaque > ol > li > section > article:nth-child(2) {
+    height: 50%;
+}
+
+.emDestaque > ol > li:first-child {
+    margin-left: 10px;
+}
+
+.emDestaque > ol > li > section > article > figure > img {
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  height: 300%;
+}
+
+footer {
+    background-color: #42426F;;
+    color: white;
+    width: 100%;
+    min-height: 150px;
+    height: 30%;
+    font-size: 12px;
+    text-align: center;
+}
+
+footer > div:nth-child(1) {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+footer > div > a, footer > div > a:link {
+    color:white;
+    text-decoration: none;
+}
+
+footer>div> a:hover {
+    color: #D8D8BF;
+}
+
+
+#navRodape {
+    width: 100%;
+    height: 100%;
+    margin-left: 600px;
+
+}
+
+/* Configurando Itens Principais */
+#navRodape> ul {
+    list-style-type: none;
+}
+
+#navRodape > ul > li {
+    //background-color: #00ff00;
+    display: table-cell;
+    margin: 0px 1px;
+    transition: 0.4s;
+}
+
+#navRodape> ul > li:not(:first-child) {
+    border-left: 1px solid black;
+}
+
+#navRodape > ul > li:hover {
+    background-color: #ccffcc;
+    transition: 0.1s;
+    border-bottom: 3px solid black;
+
+}
+
+#navRodape ul li a {
+    background-color: #42426F;
+    color: white;
+    margin: 0px;
+    padding: 13px 15px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+    transition: 0.4s;
+}
+
+#navRodape > ul > li > a {
+    background-color: #42426F;
+    color: white;
+}
+
+
+#navRodape ul li a:hover {
+    color: black;
+    text-shadow: 0px 0px 10px white;
+    transition: 0.4s;
+}

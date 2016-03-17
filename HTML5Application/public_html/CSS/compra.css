@@ -1,0 +1,124 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16/03/2016, 18:21:54
+    Author     : Ada
+*/
+*:not(ul) {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#compra {
+    background: #C0C0C0;
+    margin: 50px 10%;
+    width: 80%;
+    height: 1050px;
+}
+
+#compra h1 {
+    margin: 25px 10%;
+    width: 80%;
+    height: 50px;
+    text-align: center;
+}
+
+#imagem {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0px 5%;
+    width: 90%;
+    height: 200px;
+}
+
+#imagem > * {
+    float: left;
+}
+
+#imagem figure, #imagem img {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#imagem figure {
+    width: 40%;
+    height: 100%;
+}
+
+#imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+#imagem h2 {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 50%;
+    text-align: justify;
+    padding: 20px 5% 0px;
+}
+
+#detalhesProduto {
+    margin: 50px 5% 0px;
+    width: 90%;
+    height: 700px;
+}
+
+#detalhesProduto form {
+    margin: 20px 0px;
+}
+
+#detalhesProduto table {
+    margin: 20px 20%;
+    width: 60%;
+    height: 600px;
+    border: 1px solid #001166;
+}
+
+#detalhesProduto td:first-child {
+    width: 30%;
+}
+
+#detalhesProduto td:last-child {
+    padding-left: 30px;
+}
+
+#detalhesProduto td[colspan="2"] {
+    width: 100%;
+}
+
+td {
+    border: 1px solid #001166;
+}
+
+input[name="txtQuantidade"] {
+    margin: 5px 0px;
+    padding: 10px 5px;
+    border: 1px solid black;
+}
+
+input[type="submit"], a {
+    margin: 5px 20px;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, transparent -10%, #db7d7d 5%, #ca6d6d 95%, transparent 110%);
+    border-radius: 5px;
+    font-size: 15px;
+    font-style: normal;
+    font-family: "Tahoma";
+    color: white;
+    cursor: pointer;
+}
