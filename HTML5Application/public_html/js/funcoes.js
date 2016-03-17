@@ -12,6 +12,20 @@ jQuery(function ($) {
 
 });
 
+ function checkSelecionado(check) {
+ /*   if (check.checked) {
+        document.getElementById("captcha").style.visibility="visible";   
+    }
+    else {  
+        objeto.getElementById("captcha").style.visibility= "hidden";   
+    }  */
+    //var display = document.getElementById("captcha").style.display;
+    if (check.checked) 
+        document.getElementById("captcha").style.display = "block";
+    else
+        document.getElementById("captcha").style.display = "none";      
+}
+
 function redimensionaIframe(id) {
     if (obj = parent.document.getElementById(id)) {
         obj.height = document.body.scrollHeight + 10;
@@ -19,21 +33,32 @@ function redimensionaIframe(id) {
 }
 
 
-/*função inútil*/
 function validarMensagem() {
-    
-    var nome = document.getElementById('txtNome').value;
-    var msgm = document.getElementById('txtMensagem').value;
+    var check = document.getElementById("check").checked;
+    //var msgm = document.getElementById("txtMensagem").value;
+    var retorno = false;    
+        if (!check) {
+            alert("Por favor, informe que você não é um robô!");
+        }else if (document.getElementById("txtCaptcha").value != "F62PB"){
+            alert("Código de verificação incorreto!");
+        }/*else if (!(msgm != "")){
+            alert("Por favor, escreva-nos uma mensagem!");            
+        }*/else{
+            alert("Mensagem enviada com sucesso!");
+            retorno= true;
+        }
+        return retorno;
+}
 
-    if (nome === " ") {
-        alert("Informe seu nome!");
+    /*
+    var check = document.getElementById('check').checked;
+ 
+        if (document.getElementById('check').checked) {
+        alert("Clicou!");
         //return alert()
-    } else if (msgm==" "){
-        alert("Escreva uma mensagem!");
-    }
-    else{
-        return true;
-    }
+    } else {
+        alert("Nao marssscou");
+    }*/
     /*if (email == "") {
         alert("Informe seu email!");
         return false;
@@ -43,4 +68,3 @@ function validarMensagem() {
         return false;
     } */
         
-}

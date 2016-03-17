@@ -1,0 +1,214 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16/03/2016, 18:21:54
+    Author     : Ada
+*/
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+#geral{
+    background-image: linear-gradient(to left, #C0C0C0 -10%, #C0C0C0 -100%, #42426F 250%);
+}
+h1 {
+    color: #263342;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#geral {
+    background-color: #C0C0C0;
+    padding-top: 100px;
+}
+
+#corpo {
+    width: 100%;
+    height: 1600px;
+}
+
+#corpo > div {
+    width: 60%;
+    height: 1200px;
+    margin: 20px 20%;
+}
+
+#corpo > div > div:first-child {
+    background-image: linear-gradient(to bottom, #C0C0C0 0%, #263342 1% , #263342 99%, white 100%);
+    border-radius: 5px;
+    height: 60px;
+    width: 100%;
+}
+
+#filtros {
+    width: 100%;
+    height: 100%;
+}
+
+#filtros1 {
+    width: 40%;
+    height: 100%;
+}
+
+#filtros1 > ul {
+    border-radius: 5px;
+}
+
+#filtros1 > ul > li {
+    display: table-cell;
+}
+
+#filtros1 > ul li a {
+    border: 1px solid black;
+    border-top: none;
+    border-bottom: none;
+    background-color: #263342;
+    color: white;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+#filtros1 > ul:first-child, #filtros1 > ul > li:first-child #filtros1 > ul > li:first-child > a:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#filtros1 > ul li a:hover {
+    background-color: white;
+    color: black;
+    text-shadow: 0px 0px 10px #42426F;
+    transition: 0.4s;
+}
+
+#filtros1 > ul li ul {
+    list-style: none;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+#filtros1 > ul li ul li {
+    height: 31px;
+    width: 150px;
+    border: 0px;
+}
+
+#filtros1 > ul li ul li a {
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+#filtros1 > ul li:hover ul {
+    display: block;
+}
+
+#resultadosPesquisa {
+    width: 100%;
+    height: 1140px;
+}
+
+#resultadosPesquisa > table {
+    width: 100%;
+    height: 100%;
+}
+
+td > div {
+    margin: auto;
+    width: 80%;
+    height: 248px;
+}
+
+td > div > a {
+    width: 100%;
+    height: 100%;
+}
+
+.jogo {
+    width: 100%;
+    height: 100%;
+}
+
+.jogo > div:first-child {
+    width: 100%;
+    height: 60%;
+}
+
+.jogo > div:first-child > figure {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.jogo > div:first-child > figure > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.jogo > div:last-child {
+    background-image: linear-gradient(to bottom, transparent -5%, white 12.5%, white 80%, transparent 85%);
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin-top: -10px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 0.5s;
+}
+
+.jogo > div:last-child > div:first-child {
+    font-family: "Garamond";
+    font-stretch: ultra-condensed;
+    padding: 20px 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.jogo > div:last-child > div:last-child {
+    color: white;
+    font-size: 20px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    text-align: center;
+    opacity: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.jogo:hover > div:last-child {
+    margin-top: -50px;
+    transition: 0.5s;
+}
+
+.jogo:hover > div:last-child > div:last-child {
+    background-image: linear-gradient(to bottom, transparent 0% ,rgba(255,255,255, 0.5) 10%, rgba(238,38,34, 0.9) 20%);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.jogo h3 {
+    color: black;
+    text-align: center;
+    font-size: 18px;
+}
+
+.jogo h4 {
+    color: #8a7f23;
+    margin-top: 25px;
+    margin-left: 10px;
+}

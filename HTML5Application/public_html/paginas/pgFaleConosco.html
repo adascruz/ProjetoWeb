@@ -3,13 +3,13 @@
     <head>
         <title>Index</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="../CSS/pgFaleConosco.css">
+        <link rel="stylesheet" href="../CSS/faleConosco.css">
     </head>
     <script src="../js/jquery.js"></script>
     <script src="../js/jquery_mask.js"></script>
     <script src="../js/funcoes.js"></script>
     <body>
-        <div id="corpoContato">
+        <div id="corpoFaleConosco">
             <section>
                 <article>
                     <h3>Nossa Localização</h3>
@@ -61,7 +61,7 @@
                     <p>Segunda à Sexta 08h às 18h <br></p>
                 </article>
             </aside>
-            <form method="post" action="../index.html" onsubmit="validarMensagem()" name="form">
+            <form method="post" action="../paginas/pgInicial.html"  onsubmit=" return  validarMensagem()" name="form">
                 <div id="divFormulario">
                     <h3>Fale conosco!</h3>
 
@@ -99,10 +99,17 @@
                         <h2>Sua mensagem:</h2>
                         <label>
                             <!-- Mensagem <br> -->
-                            <textarea name="txtMensagem" rows="5" cols="44" placeholder="Escreva aqui sua mensagem!" required>
+                            <textarea name="txtMensagem" rows="2" cols="44" placeholder="Escreva aqui sua mensagem!" required>
                             </textarea> 
-                        </label> <br><br>
-                        <input id="btnCadastrar" type="submit" value="Enviar">
+                        </label> <br>
+                        <label id="txtCheck">
+                            <input id= "check" type="checkbox" name="verificacao" onclick="checkSelecionado(this)" value> Não sou um robô.
+                            <div id="captcha"> 
+                                <img  id="imgCaptcha" src="../imagens/captcha.gif">
+                                <input id="txtCaptcha" placeholder="Digite aqui o código acima.">
+                            </div>
+                        </label>
+                        <input id="btnEnviar" type="submit" value="Enviar" >
                         </input>
                     </section>
                 </div>

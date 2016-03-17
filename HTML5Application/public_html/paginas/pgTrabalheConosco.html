@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Index</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../CSS/trabalheConosco.css">
+    </head>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery_mask.js"></script>
+    <script src="../js/funcoes.js"></script>
+    <body>
+        <div id="corpoFaleConosco">
+            <form method="post" action="../paginas/pgInicial.html"  onsubmit=" return  validarMensagem()" name="form">
+                <div id="divFormulario">
+                    <h3>Trabalhe conosco!</h3>
+
+                    <section>
+                        <h2>Seus dados: </h2>
+                        <label>
+                            <!-- É nosso cliente? <br> -->
+                            <select id="txtCliente">
+                                <option value> É nosso cliente?</option>
+                                <option value="S"> Sim</option>
+                                <option value="N"> Não</option>
+                            </select>
+                        </label> <br>
+                        <label>
+                            <!--Nome <br> -->
+                            <input name="txtNome" type="text" placeholder="Nome" required/>
+                        </label> <br>
+
+                        <label> 
+                            <!-- Email <br> -->
+                            <input id="txtEmail" type="email" placeholder="Email" required/> 
+                        </label><br>
+                        <label> 
+                            <!-- Cpf <br> -->
+                            <input id="txtCpf" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}.[0-9]{2}" placeholder="CPF"  />
+
+                        </label><br>
+                        <label>
+                            <!-- Telefone <br>-->
+                            <input id="txtFone" pattern="[0-9]{5}-[0-9]{4}" placeholder="Telefone" required />
+                        </label> <br> 
+
+
+                    </section>
+
+                    <section>
+                        <label classe="rotulosEspeciais">
+                            <!-- Telefone <br>-->
+                            Curriculum:
+                            <input id="txtCurriculo" type="file" placeholder="Telefone" required />
+                        </label> <br> 
+                        <label classe="rotulosEspeciais">
+                            <input id= "check" type="checkbox" name="verificacao" onclick="checkSelecionado(this)" value> Não sou um robô.
+                            <div id="captcha"> 
+                                <img  id="imgCaptcha" src="../imagens/captcha.gif">
+                                <input id="txtCaptcha" placeholder="Digite aqui o código acima.">
+                            </div>
+                        </label>
+                        <input id="btnEnviar" type="submit" value="Enviar" >
+                        </input>
+                    </section>
+                </div>
+            </form>   
+        </div>
+    </body>
+
+    <script type="text/javascript">redimensionaIframe("princ");</script>
+
+</html>
